@@ -1,0 +1,24 @@
+{
+  "name": "custom-actions-ci-cd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ks-ahmed/custom-actions-ci-cd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ks-ahmed/custom-actions-ci-cd/issues"
+  },
+  "homepage": "https://github.com/ks-ahmed/custom-actions-ci-cd#readme",
+  "dependencies": {
+    "@actions/core": "^1.11.1"
+  }
+}
