@@ -49,6 +49,8 @@ module.exports = eval("require")("actions/core");
 /************************************************************************/
 var __webpack_exports__ = {};
 const core = __nccwpck_require__(601)
+const core = require("actions/core")
+
 
 try {
     const nameToGreet = core.getInput('who-to-greet');
