@@ -49,8 +49,9 @@ module.exports = eval("require")("actions/core");
 /************************************************************************/
 var __webpack_exports__ = {};
 
-(() => {
 const core = __nccwpck_require__(601)
+
+module.exports = __webpack_exports__;
 
 try {
     const nameToGreet = core.getInput('who-to-greet');
@@ -59,8 +60,7 @@ try {
 }  catch (error) {
     core.setFailed(error.message);
 }
-})();
 
-module.exports = __webpack_exports__;
+
 /******/ })()
 ;
