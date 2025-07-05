@@ -18,8 +18,9 @@
     "url": "https://github.com/ks-ahmed/custom-actions-ci-cd/issues"
   },
   "homepage": "https://github.com/ks-ahmed/custom-actions-ci-cd#readme",
-  "dependencies": {
+  "devDependencies": {
     "@actions/core": "^1.11.1",
-    "@actions/github": "^6.0.1"
+    "@actions/github": "^6.0.1",
+    "@vercel/ncc": "^0.38.3"
   }
 }
