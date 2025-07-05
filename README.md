@@ -34,28 +34,25 @@ To use this action in a GitHub Actions workflow, follow these steps:
 ### 1. Create or update a workflow file in `.github/workflows/greet.yml`:
 
 ```yaml
-name: Test Custom Action
+name: Custom Action CI
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
-  greet:
+  build:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    steps: 
+    - name: checkout code
+      uses: actions/checkout@main
 
-      - name: Run custom greeting action
-        uses: ./ # Use the action defined in this repo
-        with:
-          who-to-greet: 'CI/CD Pipeline'
-
-      - name: Display greeting time
-        run: echo "Greeted at ${{ steps.greet.outputs.time }}"
+    - name: Display greeting
+      uses: ks-ahmed/custom-actions-ci-cd@main
+      with:
+        who-to-greet: "CoderCo Team"
+    
+    - name: Display greeting time
+      run: echo "Greeted at ${{ steps.greet.outputs.time }}"
 ```
 
 # Development Notes
