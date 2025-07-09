@@ -5,7 +5,7 @@ description: greet
 inputs:
   who-to-greet:
     description: Who to greet
-    reruired: true
+    required: true
     default: Hello
 
 outputs: 
